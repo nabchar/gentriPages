@@ -1,0 +1,20 @@
+{
+    "release": {
+        "id": "acs2015_5yr",
+        "name": "ACS 2015 5-year",
+        "years": "2011-2015"
+    },
+    "tables": {
+        "B25105": {
+            "title": "Median Monthly Housing Costs (Dollars)",
+            "universe": "Occupied Housing Units With Monthly Housing Costs",
+            "denominator_column_id": null,
+            "columns": {
+                "B25105001": {
+                    "name": "Median monthly housing costs",
+                    "indent": 0
+                }
+            }
+        }
+    }
+}
