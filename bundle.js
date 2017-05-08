@@ -268,6 +268,12 @@ $("#incomeButton").click(function () {
     incomeInfo.remove();
     incomeLegend.remove();
   } else {
+    if (mymap.hasLayer(rentLayer)) {
+      mymap.removeLayer(rentLayer);
+      rentInfo.remove();
+      rentLegend.remove();
+    }
+
     mymap.addLayer(incomeLayer);
     incomeInfo.addTo(mymap);
     incomeLegend.addTo(mymap);
@@ -280,6 +286,12 @@ $("#rentButton").click(function () {
     rentInfo.remove();
     rentLegend.remove();
   } else {
+    if (mymap.hasLayer(incomeLayer)) {
+      mymap.removeLayer(incomeLayer);
+      incomeInfo.remove();
+      incomeLegend.remove();
+    }
+
     mymap.addLayer(rentLayer);
     rentLegend.addTo(mymap);
     rentInfo.addTo(mymap);
