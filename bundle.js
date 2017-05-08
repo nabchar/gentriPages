@@ -239,7 +239,7 @@ rentInfo.onAdd = function (mymap) {
 
 // method that we will use to update the control based on feature properties passed
 rentInfo.update = function (props) {
-  this._div.innerHTML = '<h4>Median Rent as Percentage of Income</h4>' + (props ? '<b>' + props.name + '</b><br />' + Number(props.B25071001.toFixed(1)).toLocaleString() + '%' : 'Hover over a census tract');
+  this._div.innerHTML = '<h4>Median Rent as Percentage of Income</h4>' + (props ? '<b>' + props.name + '</b><br />' + Number(props.B25071001) + '%' : 'Hover over a census tract');
 };
 
 // 2. Setup Custom Legend
@@ -268,6 +268,12 @@ $("#incomeButton").click(function () {
     incomeInfo.remove();
     incomeLegend.remove();
   } else {
+    if (mymap.hasLayer(rentLayer)) {
+      mymap.removeLayer(rentLayer);
+      rentInfo.remove();
+      rentLegend.remove();
+    }
+
     mymap.addLayer(incomeLayer);
     incomeInfo.addTo(mymap);
     incomeLegend.addTo(mymap);
@@ -275,11 +281,18 @@ $("#incomeButton").click(function () {
 });
 
 $("#rentButton").click(function () {
+  debugger;
   if (mymap.hasLayer(rentLayer)) {
     mymap.removeLayer(rentLayer);
     rentInfo.remove();
     rentLegend.remove();
   } else {
+    if (mymap.hasLayer(incomeLayer)) {
+      mymap.removeLayer(incomeLayer);
+      incomeInfo.remove();
+      incomeLegend.remove();
+    }
+
     mymap.addLayer(rentLayer);
     rentLegend.addTo(mymap);
     rentInfo.addTo(mymap);
