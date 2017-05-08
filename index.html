@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>GentriBike</title>
+    <title>Philadelphia Data Visualization</title>
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css">
@@ -16,18 +16,17 @@
 
   <body>
     <header class="header">
-        <div class="layerButton">Indego Bike Stations
-          <button id="stationButton" type="button" name="button">Toggle</button>
+        <div class='title'>
+          <h1>Data Visualization of Philadelphia</h1>
         </div>
-        <div class="layerButton">Median Income
-          <button id="incomeButton" type="button" name="button">Toggle</button>
-        </div>
+        <ul>
+          <li><h2>Data Layers: </h2></li>
+          <li class="layerButton"><button id="incomeButton" type="button" name="button">Median Income</button></li>
+          <li class="layerButton"><button id="rentButton" type="button" name="button">Median Cost of Rent (% of Income)</button></li>
+        </ul>
     </header>
 
     <div class="main-content">
-      <aside class="">
-
-      </aside>
       <div id="map"></div>
     </div>
 
