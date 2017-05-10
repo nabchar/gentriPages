@@ -41,12 +41,12 @@ ul.data-layers {
 }
 
 ul.data-layers li {
-  padding: 10px;
+  padding-right: 10px;
 }
 
 section.main-content {
   height: 75%;
-  padding: 30px;
+  padding: 0 40px 0 40px;
 }
 
 /* Always set the map height explicitly to define the size of the div
@@ -60,6 +60,7 @@ section.main-content {
 
 #incomeButton {
   padding: 5px;
+  border: 1px solid gray;
   border-radius: 15px;
   font-weight: bold;
   color: black;
@@ -67,6 +68,7 @@ section.main-content {
 }
 #rentButton {
   padding: 5px;
+  border: 1px solid gray;
   border-radius: 15px;
   font-weight: bold;
   color: black;
