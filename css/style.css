@@ -36,6 +36,7 @@ div.title {
 ul.data-layers {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
   margin-right: 30px;
 }
@@ -56,6 +57,10 @@ section.main-content {
   height: 100%;
   width: 100%;
   border: solid 2px indianred;
+}
+
+#map > * {
+  z-index: 1;
 }
 
 #incomeButton {
