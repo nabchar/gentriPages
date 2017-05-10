@@ -1,20 +1,26 @@
-html, body, ul, li, div, button, h1, h2 {
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+
+/*RESET*/
+html, header, footer, body, ul, li, div, button, p,  h1, h2 {
   margin: 0;
   padding: 0;
+  border: none;
   list-style: none;
-  font-family: sans-serif;
+  font-family: inherit;
+  text-align: inherit;
 }
 
 /* Makes the sample page fill the window. */
 html, body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
 }
 
 header {
@@ -24,23 +30,23 @@ header {
 }
 
 div.title {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
-ul {
+ul.data-layers {
   display: flex;
   justify-content: space-around;
   list-style: none;
   margin-right: 30px;
 }
 
-li {
+ul.data-layers li {
   padding: 10px;
 }
 
-div.main-content {
-  width: 100%;
-  height: 85vh;
+section.main-content {
+  height: 75%;
+  padding: 30px;
 }
 
 /* Always set the map height explicitly to define the size of the div
@@ -48,9 +54,8 @@ div.main-content {
 #map {
   margin: 0 auto;
   height: 100%;
-  width: 90%;
-  padding: 20px;
-  border: solid 2px gray;
+  width: 100%;
+  border: solid 2px indianred;
 }
 
 #incomeButton {
@@ -100,4 +105,23 @@ button:hover {
     float: left;
     margin-right: 8px;
     opacity: 0.7;
+}
+
+footer {
+}
+
+ul.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ul.icons li {
+  font-size: 30px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+ul.icons li a i {
+  color: black;
 }
