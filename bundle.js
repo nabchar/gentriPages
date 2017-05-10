@@ -282,7 +282,6 @@ $("#incomeButton").click(function () {
 });
 
 $("#rentButton").click(function () {
-  debugger;
   if (mymap.hasLayer(rentLayer)) {
     mymap.removeLayer(rentLayer);
     rentInfo.remove();
