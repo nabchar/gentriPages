@@ -117,7 +117,7 @@ var incomeLayer = L.geoJson(_income_data2.default, {
 });
 
 function getColor(median_income) {
-  return median_income > 100000 ? '#a54960' : median_income > 80000 ? '#d14a61' : median_income > 70000 ? '#e95d59' : median_income > 60000 ? '#fd8165' : median_income > 40000 ? '#fbac70' : median_income > 20000 ? '#fde299' : '#fdefb5';
+  return median_income > 100000 ? '#a54960' : median_income > 80000 ? '#d14a61' : median_income > 60000 ? '#e95d59' : median_income > 40000 ? '#fd8165' : median_income > 20000 ? '#fbac70' : median_income > 10000 ? '#fde299' : '#fdefb5';
 };
 
 var rentLayer = L.geoJson(_rent_percentage_income2.default, {
@@ -215,7 +215,7 @@ var incomeLegend = L.control({ position: 'bottomright' });
 incomeLegend.onAdd = function (mymap) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-      grades = [0, 20000, 40000, 60000, 70000, 80000, 1000000],
+      grades = [0, 10000, 20000, 40000, 60000, 80000, 1000000],
       labels = [];
 
   // loop through our density intervals and generate a label with a colored square for each interval

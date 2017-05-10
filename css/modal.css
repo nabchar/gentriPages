@@ -20,12 +20,19 @@
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
     height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 /* The Close Button */
 .close {
     color: #aaa;
-    float: right;
+    position: absolute;
+    top: 0px;
+    right: 10px;
     font-size: 28px;
     font-weight: bold;
 }
