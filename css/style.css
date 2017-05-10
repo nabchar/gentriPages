@@ -36,17 +36,18 @@ div.title {
 ul.data-layers {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
   margin-right: 30px;
 }
 
 ul.data-layers li {
-  padding: 10px;
+  padding-right: 10px;
 }
 
 section.main-content {
   height: 75%;
-  padding: 30px;
+  padding: 0 40px 0 40px;
 }
 
 /* Always set the map height explicitly to define the size of the div
@@ -58,8 +59,13 @@ section.main-content {
   border: solid 2px indianred;
 }
 
+#map > * {
+  z-index: 1;
+}
+
 #incomeButton {
   padding: 5px;
+  border: 1px solid gray;
   border-radius: 15px;
   font-weight: bold;
   color: black;
@@ -67,6 +73,7 @@ section.main-content {
 }
 #rentButton {
   padding: 5px;
+  border: 1px solid gray;
   border-radius: 15px;
   font-weight: bold;
   color: black;
@@ -108,6 +115,7 @@ button:hover {
 }
 
 footer {
+  margin-top: 20px;
 }
 
 ul.icons {
