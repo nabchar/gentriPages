@@ -268,6 +268,7 @@ $("#incomeButton").click(function () {
     incomeInfo.remove();
     incomeLegend.remove();
   } else {
+
     if (mymap.hasLayer(rentLayer)) {
       mymap.removeLayer(rentLayer);
       rentInfo.remove();
@@ -287,6 +288,7 @@ $("#rentButton").click(function () {
     rentInfo.remove();
     rentLegend.remove();
   } else {
+
     if (mymap.hasLayer(incomeLayer)) {
       mymap.removeLayer(incomeLayer);
       incomeInfo.remove();

@@ -10,8 +10,8 @@
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <script src="https://use.fontawesome.com/612adf211d.js"></script>
   </head>
 
   <body>
@@ -19,17 +19,27 @@
         <div class='title'>
           <h1>Data Visualization of Philadelphia</h1>
         </div>
-        <ul>
+        <ul class='data-layers'>
           <li><h2>Data Layers: </h2></li>
           <li class="layerButton"><button id="incomeButton" type="button" name="button">Median Income</button></li>
           <li class="layerButton"><button id="rentButton" type="button" name="button">Median Cost of Rent (% of Income)</button></li>
         </ul>
     </header>
 
-    <div class="main-content">
+    <section class="main-content">
       <div id="map"></div>
-    </div>
+    </section>
 
+    <footer>
+      <ul class="icons">
+					<li><a href="https://www.linkedin.com/in/nicholaschar/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="https://angel.co/nabchar"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/nabchar"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					<li><a href="mailto:nicholas.ab.char@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					<li><a href="assets/files/resume.pdf"><i class="fa fa-file" aria-hidden="true"></i></a></li>
+      </ul>
+			<p>&copy; Nicholas A.B. Char</p>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
     <!-- <script src="./lib/data/indego_stations.js" charset="utf-8"></script> -->
@@ -39,5 +49,4 @@
     <script src="./lib/map_interaction.js" charset="utf-8"></script> -->
     <script src="bundle.js" charset="utf-8"></script>
   </body>
-
 </html>
