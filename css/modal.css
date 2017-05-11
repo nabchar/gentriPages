@@ -16,7 +16,7 @@
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 50px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
     height: 50%;
@@ -25,6 +25,14 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+.modal-content h3 {
+  width: 85%;
+  text-align: justify;
+}
+.modal-content p {
+  width: 85%;
+  text-align: justify;
 }
 
 /* The Close Button */
