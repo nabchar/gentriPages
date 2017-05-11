@@ -95,6 +95,10 @@ var _rent_percentage_income = __webpack_require__(1);
 
 var _rent_percentage_income2 = _interopRequireDefault(_rent_percentage_income);
 
+var _modal = __webpack_require__(3);
+
+var _modal2 = _interopRequireDefault(_modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // ------ SET UP MAP --------- //
@@ -296,6 +300,51 @@ $("#rentButton").click(function () {
     rentLegend.addTo(mymap);
     rentInfo.addTo(mymap);
   }
+});
+
+(0, _modal2.default)();
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = $(function () {
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    var map = document.getElementById("map");
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    // Display the modal when the page finishes loading
+    modal.style.display = "block";
 });
 
 /***/ })
