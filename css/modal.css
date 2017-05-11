@@ -26,7 +26,7 @@
     align-items: center;
     position: relative;
 }
-.modal-content h5 {
+.modal-content h3 {
   width: 85%;
   text-align: justify;
 }

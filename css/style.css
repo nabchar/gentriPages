@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 /*RESET*/
-html, header, footer, body, ul, li, div, button, p,  h1, h2, h4, h5 {
+html, header, footer, body, ul, li, div, button, p,  h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   border: none;
