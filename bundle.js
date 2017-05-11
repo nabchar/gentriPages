@@ -314,7 +314,8 @@ $("#rentButton").click(function () {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = $(function () {
+
+exports.default = function () {
     // Get the modal
     var modal = document.getElementById('myModal');
 
@@ -345,7 +346,7 @@ exports.default = $(function () {
 
     // Display the modal when the page finishes loading
     modal.style.display = "block";
-});
+};
 
 /***/ })
 /******/ ]);
