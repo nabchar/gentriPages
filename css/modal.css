@@ -12,11 +12,17 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+#myModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: whitesmoke;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 50px;
+    padding: 40px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
     height: 50%;
