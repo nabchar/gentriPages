@@ -1,6 +1,6 @@
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: flex; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 11; /* Sit on top */
     left: 0;
