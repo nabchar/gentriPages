@@ -4,7 +4,7 @@
     position: fixed; /* Stay in place */
     justify-content: center;
     align-items: center;
-    
+
     z-index: 11; /* Sit on top */
     left: 0;
     top: 0;
@@ -19,7 +19,7 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: whitesmoke;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 100px auto; /* 15% from the top and centered */
     padding: 40px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
