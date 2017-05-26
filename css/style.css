@@ -31,7 +31,7 @@ header {
 }
 
 div.title {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 ul.data-layers {
@@ -69,16 +69,16 @@ section.main-content {
   border: 1px solid gray;
   border-radius: 15px;
   font-weight: bold;
-  color: black;
-  background: white;
+  color: white;
+  background: #e95d59;
 }
 #rentButton {
   padding: 5px;
   border: 1px solid gray;
   border-radius: 15px;
   font-weight: bold;
-  color: black;
-  background: white;
+  color: white;
+  background: #e95d59;
 }
 
 button:hover {
